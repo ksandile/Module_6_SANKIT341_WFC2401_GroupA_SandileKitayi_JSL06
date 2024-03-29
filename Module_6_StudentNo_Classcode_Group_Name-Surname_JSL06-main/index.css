@@ -80,3 +80,23 @@ footer {
     bottom: 0; /* Add this to position it at the bottom */
     width: 100%; /* Add this to span the full width */
 }
+
+.item-list li:nth-child(odd) {
+    background-color: gray; /* Set background color for odd items (item 1) */
+}
+
+.item-list li:nth-child(even) {
+    background-color: gray; /* Set background color for even items (item 2) */
+}
+
+/* CSS for menu items */
+.item-list li {
+    padding-right: 10px; /* Add padding to the right to create space for the price */
+    position: relative; /* Set position relative for the list item */
+}
+
+.item-list li span {
+    position: absolute;
+    right: 500px; /* Align the price to the right */
+    color: blue; /* Set the color of the price */
+}
