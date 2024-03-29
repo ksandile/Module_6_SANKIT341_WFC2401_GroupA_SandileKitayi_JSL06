@@ -29,6 +29,14 @@ function displayMenuItems(menu) {
             // Set the text content of the category element to the category name
             categoryElement.textContent = category;
 
+            // Apply CSS style to make the category name bold
+            if (category === 'Starters' || category === 'MainCourses' || category === 'Desserts') {
+                categoryElement.style.fontSize = '20px';
+                categoryElement.style.fontWeight = 'bold';
+                categoryElement.style.padding = '5px';
+                categoryElement.style.fontSize = '40px';
+            }
+
             // Append the category element to the menu container
             menuContainer.appendChild(categoryElement);
 
